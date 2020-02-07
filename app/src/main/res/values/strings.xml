@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AirToday</string>
+    <string name="app_name">Air Today</string>
+    <string name="tv_nombre_app">Air Today</string>
+    <string name="btn_siguiente">Continuar</string>
+    <string name="hUsuario">Usuario</string>
+    <string name="hPassword">Contraseña</string>
+    <string name="btn_entrar">Entrar!</string>
+    <string name="tv_nuevo">¿Eres nuevo/a aquí?</string>
+    <string name="tv_signUp">SIGN UP</string>
+    <string name="brn_continuar">Entrar</string>
 </resources>
