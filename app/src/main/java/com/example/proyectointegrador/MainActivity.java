@@ -1,5 +1,6 @@
-package com.joanni.airtoday;
+package com.example.proyectointegrador;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,13 +12,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.joanni.airtoday.activities.LogIn;
+import com.example.proyectointegrador.activities.ChatBotActivity;
+import com.example.proyectointegrador.activities.LogIn;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final int RC_SING_IN=1;
     TextView tvNombreApp;
     ImageView imgLogo;
     Button btnContinuar;
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +40,11 @@ public class MainActivity extends AppCompatActivity {
         imgLogo.startAnimation(rotate);
 
         openApp(true);
+     
+
     }
+
+
 
     private void openApp(boolean locationPermission) {
         Handler handler = new Handler();

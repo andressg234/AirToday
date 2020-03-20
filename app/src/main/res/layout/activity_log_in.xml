@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.LogIn"
+    tools:context="com.example.proyectointegrador.activities.LogIn"
     android:background="#1B618C">
 
     <ImageView
@@ -32,17 +32,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-45dp"
         android:text="@string/tv_nombre_app"
-        android:textColor="@android:color/white"
-        android:textSize="40sp"/>
+        android:textColor="@color/colorLogo"
+        android:textColorLink="@color/colorLogo"
+        android:textSize="40sp" />
 
     <EditText
-        android:id="@+id/etUsuario"
+        android:id="@+id/etEmail"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvNombre"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:hint="@string/hUsuario"
+        android:hint="Email"
         android:textColorHint="@android:color/white"
         android:backgroundTint="@android:color/white"
         android:textSize="24sp"/>
@@ -51,10 +52,11 @@
         android:id="@+id/etPassword"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etUsuario"
+        android:layout_below="@id/etEmail"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:hint="@string/hPassword"
+        android:inputType="textPassword"
         android:textColorHint="@android:color/white"
         android:backgroundTint="@android:color/white"
         android:textSize="24sp"/>
@@ -65,11 +67,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/redondeado_boton"
+        android:onClick="Entrar"
         android:text="@string/btn_entrar"
+        android:textColor="@android:color/white"
         android:textSize="30sp" />
 
     <TextView
+        android:onClick="Entrar"
         android:id="@+id/tvNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,6 +87,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:onClick="registrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnEntrar"

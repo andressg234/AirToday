@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.joanni.airtoday">
+    package="com.example.proyectointegrador">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +16,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.LogIn"></activity>
+        <activity android:name=".InformacionPegatinas"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBTdy1DKMEIa_X_NqaxRZCAY41jQAgPyZw" />
+
+        <activity android:name=".MenuPrincipal" />
+        <activity android:name=".activities.ChatBotActivity" />
+        <activity android:name=".activities.Registrar" />
+        <activity android:name=".activities.Confirmacion" />
+        <activity android:name=".activities.LogIn" />
+        <activity
+            android:name=".Mapa"
+            android:label="@string/title_activity_mapa" />
+        <activity android:name=".Perfil" />
+        <activity android:name=".Chat" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

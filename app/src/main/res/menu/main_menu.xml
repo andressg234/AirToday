@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itmIconLogo"
+        android:title="logo"
+        android:orderInCategory="1"
+        android:icon="@drawable/at_logo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itmIconAire"
+        android:title="calidadAire"
+        android:orderInCategory="2"
+        android:icon="@drawable/oxygen"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itmIconMapa"
+        android:title="mapa"
+        android:orderInCategory="3"
+        android:icon="@drawable/map"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itmIconCalendario"
+        android:title="calendario"
+        android:orderInCategory="4"
+        android:icon="@drawable/calendar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itmIconChat"
+        android:title="chat"
+        android:orderInCategory="5"
+        android:icon="@drawable/message"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itmIconBuscar"
+        android:title="buscar"
+        android:orderInCategory="6"
+        android:icon="@drawable/search"
+        app:showAsAction="always" />
+
+  <!--  <item
+        android:id="@+id/itmIconPerfil"
+        android:title="perfil"
+        android:orderInCategory="7"
+        android:icon="@drawable/user"
+        app:showAsAction="always" />
+-->
+
+
+</menu>

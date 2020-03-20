@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil"
+    android:background="#1B618C"
+    android:padding="26dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/at_logo" />
+
+    <!--<ImageView
+        android:id="@+id/ivMenuPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu" />-->
+
+    <ImageButton
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:background="#1B618C"
+        android:src="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/tvPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_perfil"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Blanco"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/etNomApe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPerfil"
+        android:layout_marginTop="20dp"
+        android:hint="@string/et_nom_ape"
+        android:textColorHint="@color/Blanco"
+        android:backgroundTint="@color/Blanco"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNomApe"
+        android:layout_marginTop="20dp"
+        android:hint="@string/et_email"
+        android:textColorHint="@color/Blanco"
+        android:backgroundTint="@color/Blanco"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etNumTelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="20dp"
+        android:hint="@string/et_numTelf"
+        android:textColorHint="@color/Blanco"
+        android:backgroundTint="@color/Blanco"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etNomUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNumTelf"
+        android:layout_marginTop="20dp"
+        android:hint="@string/et_nomUsuario"
+        android:textColorHint="@color/Blanco"
+        android:backgroundTint="@color/Blanco"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnGuardarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_guardar_perfil"
+        android:background="@color/verdePaleta"
+        android:textColor="@color/Blanco"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

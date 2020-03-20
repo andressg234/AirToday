@@ -1,4 +1,4 @@
-package com.joanni.airtoday;
+package com.example.proyectointegrador;
 
 import org.junit.Test;
 
